@@ -135,5 +135,5 @@ Le projet fournit une chaîne de transformation structurée, des contrôles de q
 Il permet de démontrer la maîtrise des transformations SQL avec dbt, de l'intégration avec Snowflake, de la gestion des anomalies et de la préparation de données fiables pour la Business Intelligence.
 
 ## 11. Exemple Lineage Graph pourla table ventes_raw.CLIENT
-([Lineage Graph.png](https://github.com/chiadmiotmanpro-a11y/retail-dbt-snowflake/blob/120db8e8aa0fa49a67940f61b5afb9c9820c3018/Lineage%20Graph.png)) 
+![Lineage Graph.png](https://github.com/chiadmiotmanpro-a11y/retail-dbt-snowflake/blob/120db8e8aa0fa49a67940f61b5afb9c9820c3018/Lineage%20Graph.png)
 
