@@ -1,0 +1,27 @@
+
+version: 2
+
+models:
+  - name: int_ventes
+    description: "Vue consolidée des ventes avec contrôles qualité."
+
+    columns:
+      - name: id_cmd
+        description: "Identifiant de la commande"
+        data_tests:
+          - not_null
+
+      - name: no_ligne
+        description: "Numéro de ligne de commande"
+        data_tests:
+          - not_null
+
+      - name: id_variante
+        description: "Identifiant de la variante produit"
+        data_tests:
+          - not_null
+
+      - name: quantite
+        description: "Quantité vendue"
+        data_tests:
+          - not_null

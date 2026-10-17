@@ -1,0 +1,57 @@
+
+version: 2
+
+models:
+  - name: fct_ventes
+    description: >
+      Table de faits détaillée regroupant les commandes, clients,
+      produits et variantes. Le chiffre d'affaires réalisé est calculé
+      uniquement pour les commandes dont le statut est LIVREE.
+
+    columns:
+      - name: id_cmd
+        description: "Identifiant de la commande."
+        data_tests:
+          - not_null
+
+      - name: no_ligne
+        description: "Numéro de ligne de commande."
+        data_tests:
+          - not_null
+
+      - name: ca_realise
+        description: >
+          Montant net des lignes livrées. Vaut zéro pour les autres statuts.
+
+  - name: agg_ventes_par_produit
+    description: >
+      Agrégat Gold des ventes par produit.
+      Permet d'analyser le chiffre d'affaires et les quantités livrées.
+
+    columns:
+      - name: id_pdt
+        description: "Identifiant du produit."
+        data_tests:
+          - not_null
+
+      - name: ca_realise
+        description: "Somme du chiffre d'affaires réalisé par produit."
+
+      - name: quantite_livree
+        description: "Somme des quantités livrées par produit."
+
+  - name: agg_ventes_par_famille
+    description: >
+      Agrégat Gold des ventes par famille de produits.
+
+    columns:
+      - name: id_fp
+        description: "Identifiant de la famille de produits."
+        data_tests:
+          - not_null
+
+      - name: ca_realise
+        description: "Somme du chiffre d'affaires réalisé par famille."
+
+      - name: quantite_livree
+        description: "Somme des quantités livrées par famille."

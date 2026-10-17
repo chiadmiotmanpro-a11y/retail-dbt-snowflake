@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: ventes_raw
+    description: "Tables sources brutes du projet de ventes dans Snowflake"
+    database: RETAIL
+    schema: RAW
+
+    tables:
+      - name: CLIENT
+        description: "Clients de la boutique"
+
+      - name: COMMANDE
+        description: "Commandes des clients"
+
+      - name: FAMILLE_PRODUIT
+        description: "Familles de produits"
+
+      - name: PRODUIT
+        description: "Catalogue des produits"
+
+      - name: VARIANTE_PRODUIT
+        description: "Variantes des produits selon la taille et la couleur"
+
+      - name: LIGNE_COMMANDE
+        description: "Détail des produits commandés et des quantités"
