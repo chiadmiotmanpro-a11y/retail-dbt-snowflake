@@ -133,3 +133,7 @@ dbt docs generate
 Le projet fournit une chaîne de transformation structurée, des contrôles de qualité reproductibles, des modèles analytiques et des indicateurs de vente exploitables pour le reporting.
 
 Il permet de démontrer la maîtrise des transformations SQL avec dbt, de l'intégration avec Snowflake, de la gestion des anomalies et de la préparation de données fiables pour la Business Intelligence.
+
+## 11. Exemple Lineage Graph pourla table ventes_raw.CLIENT
+https://github.com/chiadmiotmanpro-a11y/retail-dbt-snowflake/blob/357ed131714ece98ae6a5103550cc94f81318401/Lineage%20Graph_Client.png 
+
