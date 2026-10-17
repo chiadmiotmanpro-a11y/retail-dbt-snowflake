@@ -74,6 +74,10 @@ Les contrôles mis en place couvrent notamment :
 
 Des tests SQL personnalisés et des tests dbt sont utilisés pour vérifier les règles définies.
 
+### Validation des contrôles
+
+Le pipeline a été exécuté avec succès via `dbt build`, sans erreur. Les tests personnalisés vérifient notamment l'unicité des lignes de vente, la validité des quantités et des remises, ainsi que la cohérence des agrégations par produit et par famille.
+
 ## 7. Documentation et traçabilité
 
 La documentation dbt est générée avec :
@@ -115,8 +119,16 @@ Générer la documentation :
 ```bash
 dbt docs generate
 ```
+## 9. Points clés du projet
 
-## 9. Résultat attendu
+- Architecture ELT structurée en couches Bronze, Silver, Intermediate et Gold.
+- Détection et isolation des anomalies dans les données sources.
+- Tests SQL personnalisés pour automatiser les contrôles de qualité.
+- Modélisation des ventes et calcul du chiffre d'affaires réalisé selon le statut des commandes.
+- Documentation des modèles et gestion du code avec GitHub.
+
+
+## 10. Résultat attendu
 
 Le projet fournit une chaîne de transformation structurée, des contrôles de qualité reproductibles, des modèles analytiques et des indicateurs de vente exploitables pour le reporting.
 
