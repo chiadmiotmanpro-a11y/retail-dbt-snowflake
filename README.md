@@ -6,7 +6,7 @@ Ce projet consiste à construire un pipeline de transformation et de contrôle q
 
 L'objectif est de transformer des données brutes de clients, commandes et produits en modèles analytiques fiables, tout en détectant les anomalies et en appliquant des règles de qualité des données.
 ## Architecture du projet
-![Architecture du projet Retail dbt et Snowflake](Architecture Projet.png)
+![Architecture du projet Retail dbt et Snowflake](https://github.com/chiadmiotmanpro-a11y/retail-dbt-snowflake/blob/a5c558df55749b64b2d0aa938c8a0b5e5ccaa16c/Architecture%20Projet.png)
 
 ## 2. Technologies utilisées
 
